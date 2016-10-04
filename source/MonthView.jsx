@@ -1,4 +1,4 @@
-var Calendar = React.createClass({
+var HelloNovember = React.createClass({
     getInitialState: function() {
         return {
             month: this.props.selected.clone()
@@ -56,4 +56,4 @@ var Calendar = React.createClass({
     }
 });
 
-ReactDOM.render(<Calendar />, docuemtn.getElementById("container"))
+ReactDOM.render(<HelloNovember />, docuemtn.getElementById("container"))
