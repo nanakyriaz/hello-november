@@ -1,6 +1,10 @@
 $font-stack: Helvetica, sans-serif;
 $primary-color: #fff;
 $border-colour: #CCC;
+$secondary-colour: #2875C7;
+$spacing: 10px;
+$icon-width: 40px;
+$header-height: 40px;
 
 #container {
   float: left;
@@ -11,17 +15,12 @@ $border-colour: #CCC;
   border: solid 1px $border-colour;
   margin-bottom: 10px;
 
-  $secondary-colour: #2875C7;
-  $spacing: 10px;
-  $icon-width: 40px;
-  $header-height: 40px;
-
   >div.header {
     float: left;
     width: 100%;
+    color: $primary-color;
     background: $secondary-colour;
     height: $header-height;
-    color: $primary-color;
 
     >i {
       float: left;
@@ -70,7 +69,7 @@ $border-colour: #CCC;
       width: 100%/7;
       box-sizing: border-box;
       border-left: solid 1px $border-colour;
-      font-size: 0.75em;
+      font-size: 0.7em;
       text-align: center;
       background: $primary-color;
       cursor: pointer;
@@ -81,11 +80,11 @@ $border-colour: #CCC;
       }
 
       &.today {
-        background: #E3F2FF;
+        background: $primary-color;
       }
 
       &.different-month {
-        color: #C0C0C0;
+        color: $border-colour;
       }
 
       &.selected {
