@@ -5,7 +5,7 @@ var HelloNovember = React.createClass({
         };
     },
 
-    previous: function() {
+    prev: function() {
         var month = this.state.month;
         month.add(-1, "M");
         this.setState({ month: month });
@@ -24,14 +24,14 @@ var HelloNovember = React.createClass({
 
     render: function() {
         return <div>
-            <div className="header">
-                <i className="fa fa-angle-left" onClick={this.previous}></i>
-                {this.renderMonthLabel()}
-                <i className="fa fa-angle-right" onClick={this.next}></i>
-            </div>
-            <DayNames />
-            {this.renderWeeks()}
-        </div>;
+                    <div className="header">
+                        <i className="fa fa-angle-left" onClick={this.prev}></i>
+                        {this.renderMonthLabel()}
+                        <i className="fa fa-angle-right" onClick={this.next}></i>
+                    </div>
+                    <DayNames />
+                    {this.renderWeeks()}
+                </div>;
     },
 
     renderWeeks: function() {
