@@ -1,16 +1,16 @@
 $font-stack: Helvetica, sans-serif;
-$primary-color: #fff;
-$border-colour: #CCC;
-$secondary-colour: #2875C7;
+$white: #fff;
+$border-colour: #ccc;
+$ash-blue: #416891;
 $spacing: 10px;
-$icon-width: 40px;
-$header-height: 40px;
+$prev-next: 40px;
+$forty-pixels: 40px;
 
 #container {
   float: left;
   display: block;
   box-sizing: border-box;
-  background: $primary-color;
+  background: $white;
   width: 300px;
   border: solid 1px $border-colour;
   margin-bottom: 10px;
@@ -18,13 +18,13 @@ $header-height: 40px;
   >div.header {
     float: left;
     width: 100%;
-    color: $primary-color;
-    background: $secondary-colour;
-    height: $header-height;
+    color: $white;
+    background: $ash-blue;
+    height: $forty-pixels;
 
     >i {
       float: left;
-      width: $icon-width;
+      width: $prev-next;
       font-size: 1.125em;
       font-weight: bold;
       position: relative;
@@ -39,7 +39,7 @@ $header-height: 40px;
 
     >i.fa-angle-right {
       text-align: right;
-      margin-left: $icon-width*-1;
+      margin-left: $prev-next*-1;
     }
 
     >span {
@@ -48,10 +48,10 @@ $header-height: 40px;
       font-weight: bold;
       text-transform: uppercase;
       box-sizing: border-box;
-      padding-left: $icon-width+$spacing;
-      margin-left: $icon-width*-1;
+      padding-left: $prev-next+$spacing;
+      margin-left: $prev-next*-1;
       text-align: center;
-      padding-right: $icon-width;
+      padding-right: $prev-next;
       color: inherit;
     }
   }
@@ -71,7 +71,7 @@ $header-height: 40px;
       border-left: solid 1px $border-colour;
       font-size: 0.7em;
       text-align: center;
-      background: $primary-color;
+      background: $white;
       cursor: pointer;
       color: black;
 
@@ -80,7 +80,7 @@ $header-height: 40px;
       }
 
       &.today {
-        background: $primary-color;
+        background: $white;
       }
 
       &.different-month {
@@ -88,13 +88,13 @@ $header-height: 40px;
       }
 
       &.selected {
-        background: $secondary-colour;
-        color: $primary-color;
+        background: $ash-blue;
+        color: $white;
       }
     }
 
     &.names>span {
-      color: $secondary-colour;
+      color: $ash-blue;
       font-weight: bold;
     }
   }
