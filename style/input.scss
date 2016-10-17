@@ -15,14 +15,14 @@ $forty-pixels: 40px;
   border: solid 1px $border-colour;
   margin-bottom: 10px;
 
-  >div.header {
+  > div.header {
     float: left;
     width: 100%;
     color: $white;
     background: $ash-blue;
     height: $forty-pixels;
 
-    >i {
+    > i {
       float: left;
       width: $prev-next;
       font-size: 1.125em;
@@ -33,16 +33,16 @@ $forty-pixels: 40px;
       cursor: pointer;
     }
 
-    >i.fa-angle-left {
+    > i.fa-angle-left {
       text-align: left;
     }
 
-    >i.fa-angle-right {
+    > i.fa-angle-right {
       text-align: right;
       margin-left: $prev-next*-1;
     }
 
-    >span {
+    > span {
       float: left;
       width: 100%;
       font-weight: bold;
@@ -55,7 +55,7 @@ $forty-pixels: 40px;
       color: inherit;
     }
   }
-  >div.week {
+  > div.week {
     float: left;
     width: 100%;
     border-top: solid 1px $border-colour;
@@ -64,7 +64,7 @@ $forty-pixels: 40px;
       border-top: none;
     }
 
-    >span.day {
+    > span.day {
       float: left;
       width: 100%/7;
       box-sizing: border-box;
@@ -93,7 +93,7 @@ $forty-pixels: 40px;
       }
     }
 
-    &.names>span {
+    &.names > span {
       color: $ash-blue;
       font-weight: bold;
     }
