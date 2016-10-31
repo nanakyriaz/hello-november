@@ -1,5 +1,7 @@
-var Week = React.createClass({
-    render: function() {
+import React from 'react';
+
+class Week extends React.Component {
+    render() {
         var days = [],
             date = this.props.date,
             month = this.props.month;
@@ -22,4 +24,4 @@ var Week = React.createClass({
             {days}
         </div>
     }
-});
+};

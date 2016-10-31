@@ -1,5 +1,7 @@
-var DayNames = React.createClass({
-    render: function() {
+import React from 'react';
+
+class Day extends React.Component {
+    render() {
         return <div className="week names">
             <span className="day">Sun</span>
             <span className="day">Mon</span>
@@ -10,4 +12,4 @@ var DayNames = React.createClass({
             <span className="day">Sat</span>
         </div>;
     }
-});
+};
