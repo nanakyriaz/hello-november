@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 class HelloNovember extends React.Component {
     constructor(props) {
@@ -62,4 +63,4 @@ class HelloNovember extends React.Component {
     }
 };
 
-ReactDOM.render(<HelloNovember />, docuemtn.getElementById("container"))
+ReactDOM.render(<HelloNovember />, document.getElementById("container"))
