@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Week from './source/Week';
 
 class HelloNovember extends React.Component {
     constructor(props) {
