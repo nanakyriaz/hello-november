@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Week from './source/Week';
+import Day from './source/Day';
 
 class HelloNovember extends React.Component {
     constructor(props) {
